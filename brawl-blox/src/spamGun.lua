@@ -1,3 +1,6 @@
+require ('brawl-blox.src.getPlayerBrawler')
+require ('brawl-blox.src.getBrawlerArguments')
+
 function spamGun()
     local brawler = getPlayerBrawler()
     while true do

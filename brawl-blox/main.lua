@@ -1,5 +1,3 @@
-require ('brawl-blox.src.getBrawlerArguments')
-require ('brawl-blox.src.getPlayerBrawler')
 require ('brawl-blox.src.spamGun')
 
 local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
