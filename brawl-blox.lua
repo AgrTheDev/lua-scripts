@@ -315,10 +315,10 @@ function getBrawlerArguments(brawler)
     end
 end
 
-local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))() -- load the library
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
 
 local ui = library:CreateWindow("Brawl-Blox Haxx") 
-local spamFolder = ui:CreateFolder("Spam Shoot")-- GUI NAME
+local spamFolder = ui:CreateFolder("Spam Shoot")
 spamFolder:Button("Spam your gun (FFA & Trophy Brawlers only)",function()
     spamGun()
 end)
