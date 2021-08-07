@@ -1,19 +1,3 @@
-function getPlayerBrawler()
-    return game.Players[game.Players.LocalPlayer.Name].leaderstats.Brawler.Value
-end
-
-function spamGun()
-    local brawler = getPlayerBrawler()
-    while true do
-    wait(0.1)
-    local args = getBrawlerArguments(brawler)
-    game:GetService("ReplicatedStorage").RemoteEvents.ShotEvent:FireServer(unpack(args))
-end
-end
-
-
-
-
 function getBrawlerArguments(brawler)
     if brawler == "Shelly" then
         return {
@@ -314,21 +298,3 @@ function getBrawlerArguments(brawler)
         }
     end
 end
-
-local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
-
-local ui = library:CreateWindow("Brawl-Blox Haxx") 
-local spamFolder = ui:CreateFolder("Spam Shoot")
-spamFolder:Button("Spam your gun (FFA & Trophy Brawlers only)",function()
-    spamGun()
-end)
-local currencyFolder = ui:CreateFolder("Currency")
-currencyFolder:Box("Gems", "number", function (value)
-    game.Players[game.Players.LocalPlayer.Name].Status.Currencies.Gems.Value = tonumber(value)
-end)
-currencyFolder:Box("Gold", "number", function (value)
-    game.Players[game.Players.LocalPlayer.Name].Status.Currencies.Gold.Value = tonumber(value)
-end)
-currencyFolder:Box("Tokens", "number", function (value)
-    game.Players[game.Players.LocalPlayer.Name].Status.Currencies.Tokens.Value = tonumber(value)
-end)
