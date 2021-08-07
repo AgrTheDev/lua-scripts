@@ -1,3 +1,5 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AgrTheDev/lua-scripts/main/brawl-blox/src.lua')))()
+
 local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
 
 local ui = library:CreateWindow("Brawl-Blox Haxx") 
